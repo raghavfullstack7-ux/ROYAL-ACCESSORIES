@@ -72,17 +72,17 @@ const Home = () => {
   return (
     <div ref={containerRef} className="pt-20 pb-12 overflow-hidden bg-brand-cream">
       {/* Hero Section */}
-      <section className="px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto mb-24 lg:mt-8 relative min-h-[85vh] flex flex-col lg:flex-row items-center">
-        <div className="flex-1 z-10 w-full lg:w-auto pt-12 lg:pt-0">
+      <section className="px-4 sm:px-6 lg:px-8 max-w-[1600px] mx-auto mb-24 lg:mt-8 min-h-[85vh] flex flex-col lg:flex-row items-center gap-12">
+        <div className="w-full lg:w-[55%] z-10 pt-12 lg:pt-0">
           <div className="mb-6 overflow-hidden">
-            <h1 className="font-display text-[15vw] lg:text-[9vw] leading-[0.85] tracking-tight uppercase">
+            <h1 className="font-display text-[15vw] lg:text-[8vw] leading-[0.85] tracking-tight uppercase">
               <span className="block overflow-hidden"><span className="hero-text inline-block">Royal</span></span>
               <span className="block overflow-hidden text-brand-black/30"><span className="hero-text inline-block">Standard</span></span>
-              <span className="block overflow-hidden"><span className="hero-text inline-block ml-8 lg:ml-24">Accessories</span></span>
+              <span className="block overflow-hidden"><span className="hero-text inline-block ml-8 lg:ml-16">Accessories</span></span>
             </h1>
           </div>
           
-          <div className="mt-12 flex flex-col sm:flex-row items-start gap-8 lg:ml-24 hero-fade">
+          <div className="mt-12 flex flex-col sm:flex-row items-start gap-8 lg:ml-16 hero-fade relative z-20">
             <p className="max-w-xs text-sm text-brand-black/70 font-medium">
               Discover timeless outfits and luxury accessories crafted for elegance. Style that speaks louder than words.
             </p>
@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </div>
         
-        <div className="flex-1 w-full mt-12 lg:mt-0 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:w-[45%] lg:h-[75vh]">
+        <div className="w-full lg:w-[45%] relative lg:h-[75vh]">
           <div className="w-full h-[60vh] lg:h-full overflow-hidden relative bg-brand-black/5 rounded-sm">
             <img 
               ref={heroImgRef}
